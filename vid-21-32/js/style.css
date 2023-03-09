@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: 1%;
+}
+
+.logo img{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+
+nav-left ul,
+nav-right ul{
+    list-style-type: none;
+    background-color: rgb(53, 51, 51);
+}
+
+nav-left a,
+nav-right a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+nav-left a:hover{
+    background: rgb(103, 98, 98);
+}
+nav-right a:hover{
+    background: rgb(103, 98, 98);
+}
+
+@media screen and (min-width:550px){
+    header{
+        width: 960px;
+        margin: auto;
+        display: flex;
+        margin-top: 1%;
+        justify-content: space-between;
+    }
+
+    nav-left ul{
+        display: flex;
+        background: none;
+    }
+    nav-right ul{
+        display: flex;
+        background: none;
+    }
+
+    nav-left a,
+    nav-right a{
+        color: black;
+    }
+
+}
+
+/* main */
+main{
+    margin-top: 20px;
+}
+
+main-left img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+main-right{
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 550px){
+    main{
+        width: 960px;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    main-left img{
+        width: 550px ;
+        height: 350px;
+    }
+
+    main-right{
+        margin: auto;
+        text-align: left;
+        margin-left: 25px;
+    }
+    main-right h2{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+/* product */
+.display{
+    margin-top: 3%;
+    text-align: center;
+    color: tomato;
+}
+
+.images img{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.product-content{
+    text-align: center;
+    margin: 20px;
+}
+
+.deskripsi p{
+
+}
+
+@media screen and (min-width: 550px) {
+    .product{
+        width: 960px;
+        margin: auto;
+        display: flex;
+    }
+
+    .product-content{
+        height: 300px;
+        border: 1px;
+        
+    }
+
+    .images{
+        height: 200px;
+        width: 200px;
+    }
+
+    .images img{
+        width: 150px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        
+    }
+
+    .display{
+        font-size: 30px;
+    }
+}
+
+/* informasi */
+.info{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-content{
+    height: 70px;
+    width: 155px;
+    display: flex;
+    align-items: center;
+}
+
+.icon img{
+    width: 40px;
+    display: block;
+    margin-right: 6px;
+}
+
+.info-isi h2{
+    font-size: 15px;
+}
+
+.info-isi p{
+    font-size: 13px;
+}
+
+@media(min-width: 550px){
+    .info{
+        width: 960px;
+        margin: auto;
+        justify-content: space-between;
+    }
+}
+
+/* medsos */
+.medsos-isi{
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.medsos-form{
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.medsos-form form input{
+    width: 250px;
+    height: 25px;
+    margin-right: -5px;
+}
+
+.medsos-form form input[type="email"]{
+    padding: 10px;
+}
+
+.medsos-form form button{
+    height: 25px;
+    padding: 4px;
+    text-transform: uppercase;
+    border: none;
+    background: rgb(55, 88, 234);
+}
+
+.medsos-icon img{
+    width: 30px;
+    margin: 10px;
+}
+
+.medsos-icon{
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 550px){
+    .medsos{
+        width: 960px;
+        margin: auto;
+    }
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(53, 51, 51);
+    color: white;
+    display: flex;
+    padding: 5px;
+}
+
+.identitas{
+    flex: 1;
+}
+
+.identitas h2{
+    font-size: 14px;
+}
+
+.identitas p{
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.sitemap{
+    flex: 1;
+}
+
+.sitemap h2{
+    font-size: 14px;
+}
+
+.sitemap li{
+    list-style-type: none;
+    padding-top: 6px;
+    
+}
+
+.sitemap li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.payment{
+    flex: 1;
+}
+
+.payment h2{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.logo-bank img{
+    width: 80px;
+}
+
+.bank{
+    padding-bottom: 15px;
+}
+
+.bank h3{
+    font-size: 12px;
+}
+
+.bank p{
+    font-size: 12px;
+}
+
+@media(min-width:560px){
+    footer{
+        width: 960px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .identitas h2{
+        font-size: 20px;
+    }
+
+    .identitas p{
+        font-size: 15px;
+        padding-top: 6px;
+    }
+
+    .sitemap h2{
+        font-size: 20px;
+    }
+
+    .sitemap li a{
+        font-size: 15px;
+    }
+
+    .payment h2{
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+}
+
